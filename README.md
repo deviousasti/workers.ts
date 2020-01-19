@@ -5,8 +5,7 @@ Simple proxy which runs methods in a web-worker, async and strongly-typed
 
 1. Include workers.ts in your project
 
-2. Make any class you wish to proxy extend `Workers.Host `, and call `registerWorker` to track.
-
+2. Make any class you wish to proxy extend `Workers.Host`, and call `registerWorker` to track.
    
    ```typescript
     export class CalculatorWorker extends Workers.Host {
@@ -15,7 +14,7 @@ Simple proxy which runs methods in a web-worker, async and strongly-typed
          }
     }
    
-   	CalculatorWorker.registerWorker(); 
+   CalculatorWorker.registerWorker(); 
    ```
 
 3. Anywhere in your code call `createClient` to create a proxy:
